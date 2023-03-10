@@ -6,7 +6,7 @@
 """
 
 # obter valor da venda e defenir a % de desconto
-cupom = input("Você tem um cupom de desconto (s)(n): ");
+cupom = input("Você tem um cupom de desconto [s][n]: ");
 venda = float(input("Digite o valor da venda: "))
 descontoMaior = 12
 descontoMenor = 6
