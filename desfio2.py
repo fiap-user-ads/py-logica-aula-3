@@ -6,19 +6,20 @@
 """
 
 # obter valor da venda e defenir a % de desconto
-cupom = input("Você tem um cupom de desconto [s][n]: ");
 venda = float(input("Digite o valor da venda: "))
-descontoMaior = 12
-descontoMenor = 6
+cupom = input("Você tem um cupom de desconto? [s]im ou [n]ão? ");
+
+descontoMaior = 0.88 # 0.96 == 12%
+descontoMenor = 0.94 # 0.96 == 6%
 
 # aplicar desconto caso a condição seja verdadeira
 # &&
 # aplicar desconto do cupom caso seja verdadeira
 if venda > 500:
-    venda = venda - (venda / 100 * descontoMaior)
+    venda = venda * descontoMaior
 else:
-    venda = venda - (venda / 100 * descontoMenor)
-    
+    venda = venda * descontoMenor
+
 if cupom == "s":
     venda = venda - 50;
 
